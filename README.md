@@ -7,3 +7,4 @@ my FireFox userchrome stylesheet
 + Focused tab styling
 + Focused urlbar styling
 + Condense UI
++ Remove urlbar Go button

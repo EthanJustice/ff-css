@@ -6,46 +6,42 @@
   --tertiary: #404040;
   --quaternary: #4a4a4a;
 }
-html:body {
-  border: 2px solid red;
-}
 html {
   background: var(--highlight);
 }
 body {
 	background: var(--primary);
-	color: #b9bec5;
+}
+.tab-icon-image {
+  filter: grayscale(100%);
 }
 .tab-line {
   background: var(--highlight);
   border-color: var(--highlight) !important;;
 }
-tab {
-  margin: 0 2% !important;;
-}
 .tabbrowser-tab {
   background: var(--tertiary);
 }
 .tab-content {
+  border-top: 1px solid transparent;
   background: var(--tertiary);
   color: var(--secondary);
   opacity: 0.7;
 }
+.tab-content[selected] {
+  opacity: 1;
+  border-top: 1px solid var(--highlight);
+}
+.tab-content[selected] .tab-icon-image { filter: none }
 .tab-content:hover {
   opacity: 1;
 }
-#nav-bar-customization-target {
-  background: var(--quaternary);
+.tab-content:hover .tab-icon-image { filter: none }
+.tab-line[selected] {
+  background: none;
+  display: none !important;
 }
-#urlbar-input-container {
-  background: var(--tertiary);
-  color: var(--secondary) !important;
-  opacity: 0.7;
-}
-#urlbar-input-container:hover, #urlbar-input-container:focus, #urlbar-input-container:active {
-  opacity: 1;
-  color: var(--secondary) !important;
-}
+.titlebar-spacer[type="pre-tabs"]{ display: none !important }
 /* Special thanks https://github.com/WesleyBranton/Remove-Firefox-Megabar/blob/master/remove_megabar.css */
 #urlbar[breakout][breakout-extend] {
   top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
@@ -59,11 +55,18 @@ tab {
 }
 #urlbar[breakout][breakout-extend] > #urlbar-background {
   animation-name: none !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .05) !important;
+  box-shadow: none !important;
 }
 .urlbarView {
   margin-inline: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
   width: 100% !important;
+}
+.urlbarView-results {
+  border-radius: 0 !important;
+  border: none !important;
+  margin: 2px auto !important;;
 }
 .urlbarView-row {
   padding-block: 0 !important;
@@ -71,7 +74,8 @@ tab {
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
   padding: 0 !important;
   opacity: 1;
-  border: 1px solid var(--highlight)
+  border: 1px solid var(--highlight) !important;
+  box-shadow: none !important;
 }
 #urlbar > #urlbar-input-container {
   border: 1px solid transparent;
@@ -79,19 +83,47 @@ tab {
 #urlbar-background {
   display: none;
 }
+/* End */
 .urlbarView {
   background: var(--tertiary);
-  border: none;
+  border: none !important;;
 }
 .urlbarView-body-inner {
-  border-top: 1.5px solid var(--highlight);
+  border: none !important;;
 }
 toolbaritem, toolbarbutton, image {
   color: var(--highlight) !important;
-  opacity: 0.9;
+  opacity: 1;
 }
 toolbaritem:hover, toolbarbutton:hover {
   opacity: 1;
+}
+#urlbar-results {
+  border: none !important;
+  background: var(--quaternary);
+}
+#nav-bar-customization-target {
+  z-index: 9999;
+  background: var(--quaternary);
+}
+#urlbar-input-container {
+  background: var(--tertiary);
+  color: var(--secondary) !important;
+  opacity: 0.7;
+}
+#urlbar-input-container:hover, #urlbar-input-container:focus, #urlbar-input-container:active {
+  opacity: 1;
+  color: var(--secondary) !important;
+  box-shadow: none !important;
+}
+#nav-bar {
+  border: none !important;
+  box-shadow: none !important;
+  margin-top: -1px !important;
+  margin-bottom: -1px !important;
+}
+.urlbar-go-button {
+  display: none !important;
 }
 #back-button > image {
   background: none !important;
@@ -102,6 +134,15 @@ toolbaritem:hover, toolbarbutton:hover {
 #back-button:hover {
   padding: 0;
 }
-#PanelUI-button {
-  background: var(--tertiary)
+#PanelUI-button, #PanelUI-menu-button {
+  display: none;
+  background: var(--tertiary);
+}
+#contextual-feature-recommendation, #pocket-button-box {
+  display: none !important;
+}
+#reader-mode-button { display: inherit }
+::selection {
+  color: var(--primary);
+  background: var(--highlight);
 }
