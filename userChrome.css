@@ -1,148 +1,175 @@
 :root {
-  --highlight: #16c581;
-    
-  --primary: #212121;
-  --secondary: #fafafa;
-  --tertiary: #404040;
-  --quaternary: #4a4a4a;
+	--highlight: #16c581;
+
+	--primary: #212121;
+	--secondary: #fafafa;
+	--tertiary: #404040;
+	--quaternary: #4a4a4a;
 }
 html {
-  background: var(--highlight);
+	background: var(--highlight);
 }
 body {
 	background: var(--primary);
 }
+.tab-icon-overlay[soundplaying] {
+	-moz-context-properties: none;
+	border-radius: none;
+}
+.tabbrowser-tab:not([pinned])[fadein] {
+	min-width: 50px !important;
+}
+.tab-content:not([pinned]) {
+	padding-inline: 3px !important;
+}
 .tab-icon-image {
-  filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 .tab-line {
-  background: var(--highlight);
-  border-color: var(--highlight) !important;;
+	background: var(--highlight);
+	border-color: var(--highlight) !important;
 }
 .tabbrowser-tab {
-  background: var(--tertiary);
+	background: var(--tertiary);
 }
 .tab-content {
-  border-top: 1px solid transparent;
-  background: var(--tertiary);
-  color: var(--secondary);
-  opacity: 0.7;
+	border-top: 1px solid transparent;
+	background: var(--tertiary);
+	color: var(--secondary);
+	opacity: 0.7;
 }
 .tab-content[selected] {
-  opacity: 1;
-  border-top: 1px solid var(--highlight);
+	opacity: 1;
+	border-top: 1px solid var(--highlight);
 }
-.tab-content[selected] .tab-icon-image { filter: none }
+.tab-content[selected] .tab-icon-image {
+	filter: none;
+}
 .tab-content:hover {
-  opacity: 1;
+	opacity: 1;
 }
-.tab-content:hover .tab-icon-image { filter: none }
+.tab-content:hover .tab-icon-image {
+	filter: none;
+}
 .tab-line[selected] {
-  background: none;
-  display: none !important;
+	background: none;
+	display: none !important;
 }
-.titlebar-spacer[type="pre-tabs"]{ display: none !important }
+.titlebar-spacer[type="pre-tabs"] {
+	display: none !important;
+}
 /* Special thanks https://github.com/WesleyBranton/Remove-Firefox-Megabar/blob/master/remove_megabar.css */
 #urlbar[breakout][breakout-extend] {
-  top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
-  left: 0 !important;
-  width: 100% !important;
+	top: calc(
+		(var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2
+	) !important;
+	left: 0 !important;
+	width: 100% !important;
 }
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
-  height: var(--urlbar-height) !important;
-  padding-block: 0 !important;
-  padding-inline: 0 !important;
+	height: var(--urlbar-height) !important;
+	padding-block: 0 !important;
+	padding-inline: 0 !important;
 }
 #urlbar[breakout][breakout-extend] > #urlbar-background {
-  animation-name: none !important;
-  box-shadow: none !important;
+	animation-name: none !important;
+	box-shadow: none !important;
 }
 .urlbarView {
-  margin-inline: 0 !important;
-  border-radius: 0 !important;
-  border: none !important;
-  width: 100% !important;
+	margin-inline: 0 !important;
+	border-radius: 0 !important;
+	border: none !important;
+	width: 100% !important;
 }
 .urlbarView-results {
-  border-radius: 0 !important;
-  border: none !important;
-  margin: 2px auto !important;;
+	border-radius: 0 !important;
+	border: none !important;
+	margin: 2px auto !important;
 }
 .urlbarView-row {
-  padding-block: 0 !important;
+	padding-block: 0 !important;
 }
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
-  padding: 0 !important;
-  opacity: 1;
-  border: 1px solid var(--highlight) !important;
-  box-shadow: none !important;
+	padding: 0 !important;
+	opacity: 1;
+	border: 1px solid var(--highlight) !important;
+	box-shadow: none !important;
 }
 #urlbar > #urlbar-input-container {
-  border: 1px solid transparent;
+	border: 1px solid transparent;
 }
 #urlbar-background {
-  display: none;
+	display: none;
 }
 /* End */
 .urlbarView {
-  background: var(--tertiary);
-  border: none !important;;
+	background: var(--tertiary);
+	border: none !important;
 }
 .urlbarView-body-inner {
-  border: none !important;;
+	border: none !important;
 }
-toolbaritem, toolbarbutton, image {
-  color: var(--highlight) !important;
-  opacity: 1;
+toolbaritem,
+toolbarbutton,
+image {
+	color: var(--highlight) !important;
+	opacity: 1;
 }
-toolbaritem:hover, toolbarbutton:hover {
-  opacity: 1;
+toolbaritem:hover,
+toolbarbutton:hover {
+	opacity: 1;
 }
 #urlbar-results {
-  border: none !important;
-  background: var(--quaternary);
+	border: none !important;
+	background: var(--quaternary);
 }
 #nav-bar-customization-target {
-  z-index: 9999;
-  background: var(--quaternary);
+	z-index: 9999;
+	background: var(--quaternary);
+}
+#urlbar-go-button {
+	display: none;
 }
 #urlbar-input-container {
-  background: var(--tertiary);
-  color: var(--secondary) !important;
-  opacity: 0.7;
+	background: var(--tertiary);
+	color: var(--secondary) !important;
+	opacity: 0.7;
 }
-#urlbar-input-container:hover, #urlbar-input-container:focus, #urlbar-input-container:active {
-  opacity: 1;
-  color: var(--secondary) !important;
-  box-shadow: none !important;
+#urlbar-input-container:hover,
+#urlbar-input-container:focus,
+#urlbar-input-container:active {
+	opacity: 1;
+	color: var(--secondary) !important;
+	box-shadow: none !important;
 }
 #nav-bar {
-  border: none !important;
-  box-shadow: none !important;
-  margin-top: -1px !important;
-  margin-bottom: -1px !important;
-}
-.urlbar-go-button {
-  display: none !important;
+	border: none !important;
+	box-shadow: none !important;
+	margin-top: -1px !important;
+	margin-bottom: -1px !important;
 }
 #back-button > image {
-  background: none !important;
-  padding: 0;
-  border: none !important;
-  border-radius: 0 !important;
+	background: none !important;
+	padding: 0;
+	border: none !important;
+	border-radius: 0 !important;
 }
 #back-button:hover {
-  padding: 0;
+	padding: 0;
 }
-#PanelUI-button, #PanelUI-menu-button {
-  display: none;
-  background: var(--tertiary);
+#PanelUI-button,
+#PanelUI-menu-button {
+	display: none;
+	background: var(--tertiary);
 }
-#contextual-feature-recommendation, #pocket-button-box {
-  display: none !important;
+#contextual-feature-recommendation,
+#pocket-button-box {
+	display: none !important;
 }
-#reader-mode-button { display: inherit }
+#reader-mode-button {
+	display: inherit;
+}
 ::selection {
-  color: var(--primary);
-  background: var(--highlight);
+	color: var(--primary);
+	background: var(--highlight);
 }
