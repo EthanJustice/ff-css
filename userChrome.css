@@ -12,49 +12,53 @@ html {
 body {
 	background: var(--primary);
 }
-.tab-icon-overlay[soundplaying] {
-	-moz-context-properties: none;
-	border-radius: none;
-}
-.tabbrowser-tab:not([pinned])[fadein] {
-	min-width: 50px !important;
-}
-.tab-content:not([pinned]) {
-	padding-inline: 3px !important;
-}
+/* favicons */
 .tab-icon-image {
 	filter: grayscale(100%);
 }
+/* Sound icon */
+.tab-icon-overlay[soundplaying] {
+  list-style: none;
+}
+/* tab top border */
 .tab-line {
 	background: var(--highlight);
 	border-color: var(--highlight) !important;
 }
+/* tab container background */
 .tabbrowser-tab {
 	background: var(--tertiary);
 }
+/* tab background */
 .tab-content {
 	border-top: 1px solid transparent;
 	background: var(--tertiary);
 	color: var(--secondary);
 	opacity: 0.7;
 }
+/* active tab background */
 .tab-content[selected] {
 	opacity: 1;
 	border-top: 1px solid var(--highlight);
 }
+/* favicon of active tab */
 .tab-content[selected] .tab-icon-image {
 	filter: none;
 }
+/* tab being hovered */
 .tab-content:hover {
 	opacity: 1;
 }
+/* favicon of tab being hovered */
 .tab-content:hover .tab-icon-image {
 	filter: none;
 }
+/* top border of active tab */
 .tab-line[selected] {
 	background: none;
 	display: none !important;
 }
+/* annoying spacer */
 .titlebar-spacer[type="pre-tabs"] {
 	display: none !important;
 }
@@ -101,40 +105,49 @@ body {
 #urlbar-background {
 	display: none;
 }
-/* End */
+/* end */
+/* outer container of search results */
 .urlbarView {
 	background: var(--tertiary);
 	border: none !important;
 }
+/* inner container of search results */
 .urlbarView-body-inner {
 	border: none !important;
 }
+/* various toolbar buttons (history, etc.) */
 toolbaritem,
 toolbarbutton,
 image {
 	color: var(--highlight) !important;
 	opacity: 1;
 }
+/* hover state of various toolbar buttons */
 toolbaritem:hover,
 toolbarbutton:hover {
 	opacity: 1;
 }
+/* background of url results */
 #urlbar-results {
 	border: none !important;
 	background: var(--quaternary);
 }
+/* background of box that contains urlbar, toolbar buttons, etc. */
 #nav-bar-customization-target {
 	z-index: 9999;
 	background: var(--quaternary);
 }
+/* arrow button in urlbar */
 #urlbar-go-button {
 	display: none;
 }
+/* url input */
 #urlbar-input-container {
 	background: var(--tertiary);
 	color: var(--secondary) !important;
 	opacity: 0.7;
 }
+/* url input states */
 #urlbar-input-container:hover,
 #urlbar-input-container:focus,
 #urlbar-input-container:active {
@@ -142,34 +155,34 @@ toolbarbutton:hover {
 	color: var(--secondary) !important;
 	box-shadow: none !important;
 }
+/* similar to #nav-bar-customization-target */
 #nav-bar {
 	border: none !important;
 	box-shadow: none !important;
 	margin-top: -1px !important;
 	margin-bottom: -1px !important;
 }
-#back-button > image {
-	background: none !important;
-	padding: 0;
-	border: none !important;
-	border-radius: 0 !important;
+/* first three buttons, ids self-explanatory */
+#back-button, #forward-button, #reload-button {
+  display: none;
 }
-#back-button:hover {
-	padding: 0;
-}
+/* hamburger menu, three horizontal lines, in top right of urlbar container */
 #PanelUI-button,
 #PanelUI-menu-button {
 	display: none;
 	background: var(--tertiary);
 }
+/* buttons in urlbar */
 #contextual-feature-recommendation,
 #pocket-button-box {
 	display: none !important;
 }
+/* shows reader button, hidden by previous selector */
 #reader-mode-button {
 	display: inherit;
 }
-::selection {
+/* highlights */
+::selection, ::-moz-selection {
 	color: var(--primary);
 	background: var(--highlight);
 }

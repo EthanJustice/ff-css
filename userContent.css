@@ -1,16 +1,9 @@
-:root {
-	--firefox-highlight-colour: rgba(22, 197, 129, 1);
-	--firefox-highlight-colour-dimmed: RGBA(22, 197, 129, 0.7);
-
-	--primary: #212121;
-	--secondary: #fafafa;
-	--tertiary: #404040;
-	--quaternary: #4a4a4a;
-}
 * {
-	scrollbar-color: var(--firefox-highlight-colour-dimmed) transparent;
+	scrollbar-color: #4a4a4a transparent;
 	scrollbar-width: thin !important
 }
-*:hover {
-	scrollbar-color: var(--firefox-highlight-colour) transparent;
+/* highlights, overrides dev-set values */
+::selection, ::-moz-selection {
+	background-color: #16c581 !important;
+	color: #212121 !important;
 }
