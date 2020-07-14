@@ -2,8 +2,8 @@
 	scrollbar-color: #4a4a4a transparent;
 	scrollbar-width: thin !important
 }
-/* highlights, overrides dev-set values */
+/* highlights */
 ::selection, ::-moz-selection {
-	background-color: #16c581 !important;
-	color: #212121 !important;
+	background-color: #16c581;
+	color: #212121;
 }
