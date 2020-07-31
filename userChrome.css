@@ -1,188 +1,194 @@
 :root {
-	--highlight: #16c581;
+    --highlight: #16c581;
 
-	--primary: #212121;
-	--secondary: #fafafa;
-	--tertiary: #404040;
-	--quaternary: #4a4a4a;
+    --primary: #212121;
+    --secondary: #fafafa;
+    --tertiary: #404040;
+    --quaternary: #4a4a4a;
 }
 html {
-	background: var(--highlight);
+    font-family: "Consolas", monospace !important;
+    background: var(--highlight);
 }
 body {
-	background: var(--primary);
+    background: var(--primary);
 }
 /* favicons */
 .tab-icon-image {
-	filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 /* Sound icon */
 .tab-icon-overlay[soundplaying] {
-  list-style: none;
+    list-style: none;
 }
 /* tab top border */
 .tab-line {
-	background: var(--highlight);
-	border-color: var(--highlight) !important;
+    background: var(--highlight);
+    border-color: var(--highlight) !important;
 }
 /* tab container background */
 .tabbrowser-tab {
-	background: var(--tertiary);
+    background: var(--tertiary);
 }
 /* tab background */
 .tab-content {
-	border-top: 1px solid transparent;
-	background: var(--tertiary);
-	color: var(--secondary);
-	opacity: 0.7;
+    border-top: 1px solid transparent;
+    background: var(--tertiary);
+    color: var(--secondary);
+    opacity: 0.7;
 }
 /* active tab background */
 .tab-content[selected] {
-	opacity: 1;
-	border-top: 1px solid var(--highlight);
+    opacity: 1;
+    border-top: 1px solid var(--highlight);
 }
 /* favicon of active tab */
 .tab-content[selected] .tab-icon-image {
-	filter: none;
+    filter: none;
 }
 /* tab being hovered */
 .tab-content:hover {
-	opacity: 1;
+    opacity: 1;
 }
 /* favicon of tab being hovered */
 .tab-content:hover .tab-icon-image {
-	filter: none;
+    filter: none;
 }
 /* top border of active tab */
 .tab-line[selected] {
-	background: none;
-	display: none !important;
+    background: none;
+    display: none !important;
 }
 /* annoying spacer */
 .titlebar-spacer[type="pre-tabs"] {
-	display: none !important;
+    display: none !important;
 }
 /* Special thanks https://github.com/WesleyBranton/Remove-Firefox-Megabar/blob/master/remove_megabar.css */
 #urlbar[breakout][breakout-extend] {
-	top: calc(
-		(var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2
-	) !important;
-	left: 0 !important;
-	width: 100% !important;
+    top: calc(
+        (var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2
+    ) !important;
+    left: 0 !important;
+    width: 100% !important;
 }
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
-	height: var(--urlbar-height) !important;
-	padding-block: 0 !important;
-	padding-inline: 0 !important;
+    height: var(--urlbar-height) !important;
+    padding-block: 0 !important;
+    padding-inline: 0 !important;
 }
 #urlbar[breakout][breakout-extend] > #urlbar-background {
-	animation-name: none !important;
-	box-shadow: none !important;
+    animation-name: none !important;
+    box-shadow: none !important;
 }
 .urlbarView {
-	margin-inline: 0 !important;
-	border-radius: 0 !important;
-	border: none !important;
-	width: 100% !important;
+    margin-inline: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    width: 100% !important;
 }
 .urlbarView-results {
-	border-radius: 0 !important;
-	border: none !important;
-	margin: 2px auto !important;
+    border-radius: 0 !important;
+    border: none !important;
+    margin: 2px auto !important;
 }
 .urlbarView-row {
-	padding-block: 0 !important;
+    padding-block: 0 !important;
 }
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
-	padding: 0 !important;
-	opacity: 1;
-	border: 1px solid var(--highlight) !important;
-	box-shadow: none !important;
+    padding: 0 !important;
+    opacity: 1;
+    border: 1px solid var(--highlight) !important;
+    box-shadow: none !important;
 }
 #urlbar > #urlbar-input-container {
-	border: 1px solid transparent;
+    border: 1px solid transparent;
 }
 #urlbar-background {
-	display: none;
+    display: none;
 }
 /* end */
 /* outer container of search results */
 .urlbarView {
-	background: var(--tertiary);
-	border: none !important;
+    background: var(--tertiary);
+    border: none !important;
 }
 /* inner container of search results */
 .urlbarView-body-inner {
-	border: none !important;
+    border: none !important;
 }
 /* various toolbar buttons (history, etc.) */
 toolbaritem,
 toolbarbutton,
 image {
-	color: var(--highlight) !important;
-	opacity: 1;
+    color: var(--highlight) !important;
+    opacity: 1;
 }
 /* hover state of various toolbar buttons */
 toolbaritem:hover,
 toolbarbutton:hover {
-	opacity: 1;
+    opacity: 1;
 }
 /* background of url results */
 #urlbar-results {
-	border: none !important;
-	background: var(--quaternary);
+    border: none !important;
+    background: var(--quaternary);
 }
 /* background of box that contains urlbar, toolbar buttons, etc. */
 #nav-bar-customization-target {
-	z-index: 9999;
-	background: var(--quaternary);
+    z-index: 9999;
+    background: var(--quaternary);
 }
 /* arrow button in urlbar */
 #urlbar-go-button {
-	display: none;
+    display: none;
 }
 /* url input */
 #urlbar-input-container {
-	background: var(--tertiary);
-	color: var(--secondary) !important;
-	opacity: 0.7;
+    background: var(--tertiary);
+    color: var(--secondary) !important;
+    opacity: 0.7;
 }
 /* url input states */
 #urlbar-input-container:hover,
 #urlbar-input-container:focus,
 #urlbar-input-container:active {
-	opacity: 1;
-	color: var(--secondary) !important;
-	box-shadow: none !important;
+    opacity: 1;
+    color: var(--secondary) !important;
+    box-shadow: none !important;
 }
 /* similar to #nav-bar-customization-target */
 #nav-bar {
-	border: none !important;
-	box-shadow: none !important;
-	margin-top: -1px !important;
-	margin-bottom: -1px !important;
-}
-/* first three buttons, ids self-explanatory */
-#back-button, #forward-button, #reload-button {
-  display: none;
+    border: none !important;
+    box-shadow: none !important;
+    margin-top: -1px !important;
+    margin-bottom: -1px !important;
 }
 /* hamburger menu, three horizontal lines, in top right of urlbar container */
 #PanelUI-button,
 #PanelUI-menu-button {
-	display: none;
-	background: var(--tertiary);
+    display: inherit;
+    background: var(--quaternary);
+    margin: 0 !important;
+}
+/* first three buttons, ids self-explanatory */
+#back-button,
+#forward-button,
+#reload-button,
+#stop-reload-button {
+    display: none;
 }
 /* buttons in urlbar */
 #contextual-feature-recommendation,
 #pocket-button-box {
-	display: none !important;
+    display: none !important;
 }
 /* shows reader button, hidden by previous selector */
 #reader-mode-button {
-	display: inherit;
+    display: inherit;
 }
 /* highlights */
-::selection, ::-moz-selection {
-	color: var(--primary);
-	background: var(--highlight);
+::selection,
+::-moz-selection {
+    color: var(--primary);
+    background: var(--highlight);
 }
