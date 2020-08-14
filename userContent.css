@@ -1,9 +1,185 @@
+:root {
+    --highlight: #16c581;
+    --highlight-dark: #c416b0;
+
+    --primary: #212121;
+    --secondary: #b9bec5;
+    --tertiary: #404040;
+    --quaternary: #4a4a4a;
+}
+/* scrollbar */
 * {
-	scrollbar-color: #4a4a4a transparent !important;
-	scrollbar-width: thin !important
+    scrollbar-color: var(--quaternary) transparent !important;
+    scrollbar-width: thin !important;
+}
+/* reader mode */
+@-moz-document url-prefix("about:reader") {
+    body {
+        --font-size: 16px;
+        --content-width: 800px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+        line-height: 1.8;
+    }
+
+    body.dark {
+        background-color: var(--primary) !important;
+        color: var(--secondary) !important;
+    }
+
+    body.serif,
+    body.sans-serif {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+    }
+
+    /* sidebar */
+    #toolbar {
+        display: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: normal !important;
+    }
+
+    h1 {
+        margin: 2% auto !important;
+    }
+
+    hr {
+        width: 100%;
+        border: none;
+        border-top: 2px solid var(--tertiary);
+        margin: 4% 0;
+    }
+
+    /* domain of page being read */
+    #reader-domain {
+        margin: 2% auto !important;
+    }
+
+    #reader-domain,
+    a,
+    a:link {
+        text-decoration: none !important;
+        border: none !important;
+        color: var(--highlight) !important;
+    }
+
+    a:visited {
+        color: var(--highlight-dark) !important;
+    }
+
+    #reader-domain:hover,
+    a:hover {
+        text-decoration: underline !important;
+    }
+
+    /* author of page (I assume from the <meta> author tag */
+    div.credits {
+        font-weight: lighter;
+        font-style: normal !important;
+    }
+
+    /* estimate of reading time */
+    .reader-estimated-time {
+        font-size: 16pt;
+    }
+
+    img {
+        max-height: 400px !important;
+        max-width: 100% !important;
+    }
+
+    ul {
+        list-style-type: square !important;
+    }
+
+    ol {
+        list-style-type: decimal !important;
+    }
+
+    ul li,
+    ol li {
+        margin: auto 2% !important;
+    }
+
+    kbd,
+    code {
+        font-family: "Consolas", "Courier New", monospace !important;
+        font-weight: bold !important;
+        border-radius: 0 !important;
+        background-color: var(--tertiary) !important;
+        color: var(--highlight) !important;
+        padding: 1px 6px !important;
+        margin: 0 !important;
+    }
+
+    blockquote,
+    q {
+        border-left: 3px solid var(--tertiary) !important;
+        border-radius: 0 !important;
+        margin: 3% 5% !important;
+        padding: 5px 15px !important;
+        width: 90% !important;
+    }
+
+    cite::before {
+        content: "- ";
+    }
+
+    cite {
+        padding: 4px 0 4px 8px;
+        margin: auto;
+        display: block;
+    }
+
+    table {
+        border: none !important; /* overrides existing border */
+        border-collapse: collapse !important;
+        border-bottom: 2px solid var(--quaternary) !important;
+        width: 100% !important;
+        padding: 3px 10px !important;
+        margin: 3% auto !important;
+        text-align: center !important;
+    }
+
+    td,
+    th {
+        border: none !important;
+        padding: 8px !important;
+        text-align: left !important;
+    }
+
+    th {
+        background: var(--tertiary);
+        position: sticky;
+        top: 0 !important;
+        z-index: 2 !important;
+        padding: 10px !important;
+        border-top: 3px solid var(--tertiary);
+        font-size: 18pt !important;
+        font-weight: lighter !important;
+    }
+
+    tr:nth-child(even) {
+        border: none !important;
+        background-color: var(--tertiary);
+    }
+
+    /* highlighting */
+    ::selection,
+    ::-moz-selection {
+        background-color: var(--highlight);
+        color: var(--primary);
+    }
 }
 /* highlights */
-::selection, ::-moz-selection {
-	background-color: #16c581;
-	color: #212121;
+::selection,
+::-moz-selection {
+    background-color: var(--highlight);
+    color: var(--primary);
 }

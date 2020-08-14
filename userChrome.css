@@ -8,6 +8,7 @@
 }
 html {
     font-family: "Consolas", monospace !important;
+    font-weight: bold !important;
     background: var(--highlight);
 }
 body {
