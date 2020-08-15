@@ -2,7 +2,6 @@
 
 my FireFox userchrome stylesheet
 
-
 ## Roadmap
 
 + ~~Focused tab styling~~
@@ -38,3 +37,15 @@ my FireFox userchrome stylesheet
 ### Other
 
 + Highlight defaults to a dark green as the background, and a dark grey as the colour
+
+## See Also
+
+### Theming
+
++ [List of variables](https://gist.github.com/MrOtherGuy/a673848c95823225f7b198199f87a396)
+
+### Other Configs
+
+### Resources
+
++ [r/FirefoxCSS](https://old.reddit.com/r/FirefoxCSS/)
