@@ -9,7 +9,7 @@ my FireFox userchrome stylesheet
 + ~~Focused urlbar styling~~
 + ~~Condense UI~~
 + ~~Remove urlbar Go button~~
-+ Comment code/reorganize by position
++ ~~Comment code~~/reorganize by position
 + Remove pinned tab w/audio red border
 + Continue the crusade against `border-radius`
 + Hide Pocket button again

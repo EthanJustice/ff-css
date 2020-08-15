@@ -108,6 +108,11 @@ body {
     display: none;
 }
 /* end */
+/* highlighted autocomplete */
+body {
+    --autocomplete-popup-highlight-background: var(--highlight);
+    --autocomplete-popup-highlight-color: var(--tertiary);
+}
 /* outer container of search results */
 .urlbarView {
     background: var(--tertiary);
