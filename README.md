@@ -4,15 +4,14 @@ my FireFox userchrome stylesheet
 
 ## Roadmap
 
-+ ~~Focused tab styling~~
-+ ~~Focused urlbar styling~~
-+ ~~Condense UI~~
-+ ~~Remove urlbar Go button~~
-+ ~~Comment code~~/reorganize by position
 + Remove pinned tab w/audio red border
 + Continue the crusade against `border-radius`
-+ Hide Pocket button again
++ External menu styling (history, etc.)
++ Make urlbar transparent
 + Make omnibar hidden until hovered upon
+
++ ~~Add back button again~~
++ ~~Hide Pocket button again~~
 
 ## Screenshots
 

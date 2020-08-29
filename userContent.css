@@ -209,3 +209,8 @@
     background-color: var(--highlight);
     color: var(--primary);
 }
+a:not([href])::after {
+    content: "X";
+    font-size: inherit;
+    color: crimson;
+}

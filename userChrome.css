@@ -12,7 +12,10 @@ html {
     background: var(--highlight);
 }
 body {
+    --toolbarbutton-border-radius: 0px;
     background: var(--primary);
+    transition: none !important;
+    animation: none !important;
 }
 /* favicons */
 .tab-icon-image {
@@ -158,6 +161,8 @@ toolbarbutton:hover {
 #urlbar-input-container:hover,
 #urlbar-input-container:focus,
 #urlbar-input-container:active {
+    border: 1px solid var(--highlight);
+    transition: none !important;
     opacity: 1;
     color: var(--secondary) !important;
     box-shadow: none !important;
@@ -177,7 +182,6 @@ toolbarbutton:hover {
     margin: 0 !important;
 }
 /* first three buttons, ids self-explanatory */
-#back-button,
 #forward-button,
 #reload-button,
 #stop-reload-button {
@@ -185,7 +189,7 @@ toolbarbutton:hover {
 }
 /* buttons in urlbar */
 #contextual-feature-recommendation,
-#pocket-button-box {
+#pocket-button {
     display: none !important;
 }
 /* shows reader button, hidden by previous selector */
