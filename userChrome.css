@@ -196,6 +196,35 @@ toolbarbutton:hover {
 #reader-mode-button {
     display: inherit;
 }
+/* bookmarks bar */
+#personal-bookmarks,
+#personal-bookmarks > * {
+    background: var(--tertiary);
+    font-weight: 500 !important;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+    padding: 2px 5px !important;
+}
+/* individual bookmark */
+.bookmark-item {
+    opacity: 0.4;
+    filter: grayscale(100%);
+}
+.bookmark-item label {
+    color: var(--secondary) !important;
+}
+.bookmark-item:hover,
+.bookmark-item:focus {
+    opacity: 1;
+    filter: grayscale(0);
+    background: var(--quaternary) !important;
+    transition: none !important;
+    animation: none !important;
+}
+.bookmark-item:not(:hover),
+.bookmark-item:not(:focus) {
+    transition: none !important;
+    animation: none !important;
+}
 /* highlights */
 ::selection,
 ::-moz-selection {
