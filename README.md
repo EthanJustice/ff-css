@@ -8,6 +8,7 @@ my FireFox userchrome stylesheet
 + Continue the crusade against `border-radius`
 + External menu styling (history, etc.)
 + Make urlbar transparent
++ Styling for bookmark menu
 + Make omnibar hidden until hovered upon
 
 + ~~Add back button again~~
