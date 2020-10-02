@@ -203,13 +203,6 @@
         display: none !important;
     }
 }
-/* urls not on same site */
-a[href^="//"]::after, a[href^="http"]::after
-{
-    content: "⬈";
-    margin: auto 5px;
-    font-size: inherit;
-}
 /* highlights */
 ::selection,
 ::-moz-selection {
