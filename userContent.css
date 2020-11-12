@@ -1,6 +1,6 @@
 :root {
     --highlight: #16c581;
-    --highlight-dark: #c416b0;
+    --highlight-dark: #2965e5;
 
     --primary: #212121;
     --secondary: #b9bec5;
@@ -208,4 +208,13 @@
 ::-moz-selection {
     background-color: var(--highlight);
     color: var(--primary);
+}
+* {
+    transition: 100ms;
+}
+a {
+    color: var(--highlight);
+}
+a:visited {
+    color: var(--highlight-dark);
 }

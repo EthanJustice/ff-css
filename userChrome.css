@@ -204,8 +204,26 @@ toolbarbutton:hover {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
     padding: 2px 5px !important;
 }
+/* bookmark(let) bar */
+:root[uidensity="compact"] {
+    --toolbarbutton-outer-padding: 0;
+}
+#personal-bookmarks,
+#PersonalToolbar,
+#PlacesToolbar,
+#PlacesToolbarItems {
+    min-height: 20px !important;
+    margin: 0 !important;
+    border: none;
+    padding-inline: 0 !important;
+    padding: 0 !important;
+    background: var(--quaternary);
+}
 /* individual bookmark */
 .bookmark-item {
+    min-height: 20px;
+    padding: 5px 10px;
+    padding-block: 5px 10px;
     opacity: 0.4;
     filter: grayscale(100%);
 }
