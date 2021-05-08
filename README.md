@@ -18,7 +18,7 @@ my FireFox userchrome stylesheet
 
 ### URL/Omni Bar
 
-![URL bar](https://github.com/EthanJustice/ff-css/blob/master/media/urlbar.png)
+![URL bar](https://github.com/hvlck/ff-css/blob/master/media/urlbar.png)
 
 + Favicons in non-active tabs are grayscale, non-active tabs are dimmer
 + The active tab have a green border at the top
@@ -29,7 +29,7 @@ my FireFox userchrome stylesheet
 
 ### Pages
 
-![Scrollbar](https://github.com/EthanJustice/ff-css/blob/master/media/scrollbar.png)
+![Scrollbar](https://github.com/hvlck/ff-css/blob/master/media/scrollbar.png)
 
 + Scrollbar is a dark grey, track is transparent
 + Scrollbar is dimmed until it's hovered upon
